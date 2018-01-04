@@ -1,0 +1,70 @@
+.mailerlite-activate {
+    background: #FFF;
+    max-width: 750px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.mailerlite-activate .description-block {
+    float: left;
+    min-width: 235px;
+}
+
+.mailerlite-activate .description-block .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mailerlite-activate .input-block {
+    float: left;
+    padding-top: 25px;
+}
+
+.mailerlite-activate .input-block .popups {
+    padding: 15px;
+    display: inline;
+    margin: 15px 15px 15px 30px;
+}
+
+.mailerlite-empty-list {
+    padding: 30px;
+}
+
+.mailerlite-text-center {
+    text-align: center;
+}
+
+.mailerlite-pull-right {
+    float: right;
+}
+
+.mailerlite-header {
+    height: 100px;
+    background: url('../image/header.png');
+    margin: 0px 0px 20px -20px;
+}
+
+.popup-description {
+    background: #ffffff;
+    margin: 10px 0px 10px 0px;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+}
+
+.popup-description p {
+    margin: 0px 0px 10px 0px;
+}
+
+.mailerlite-table th {
+    padding-left: 15px;
+}
+
+p.info {
+    background: #fcf8e3;
+    padding: 15px;
+}
+
+p.success {
+    background: #dff0d8;
+    padding: 15px;
+}

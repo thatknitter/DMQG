@@ -1,0 +1,26 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# BEGIN MemberPress Rules
+<IfModule mod_rewrite.c>
+
+RewriteCond %{HTTP_COOKIE} mplk=([a-zA-Z0-9]+)
+RewriteCond /Users/kimberlylewis/Sites/DMQG/wp-content/uploads/mepr/rules/%1 -f
+RewriteRule ^(.*)$ - [L]
+
+RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-includes|wp-content/plugins|wp-content/themes)
+RewriteCond %{REQUEST_URI} \.(zip|gz|tar|rar|doc|docx|xls|xlsx|xlsm|pdf|mp4|m4v|mp3|ts|key|m3u8|ZIP|GZ|TAR|RAR|DOC|DOCX|XLS|XLSX|XLSM|PDF|MP4|M4V|MP3|TS|KEY|M3U8)$
+RewriteRule . /wp-content/plugins/memberpress/lock.php [L]
+
+</IfModule>
+# END MemberPress Rules
+
+# END WordPress
